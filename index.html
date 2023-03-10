@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Small Task</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/solid.min.css">
+    <link rel="stylesheet" href="fontawesome/fontawesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="h1">LOGO</div>
+        <div class="cart" id="cart_icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="indicator" class="indicator"></span>
+
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div id="productsss"></div>
+      <div class="products" id="products">
+        <!-- 
+        <div class="product">
+          <div class="img-container">
+            <img src="images/round-skeleton-watch.jpg" alt="watch img">
+          </div>
+          <h2>Black Watch</h2>
+          <p class="price"><b>Price: </b>112.55</p>
+          <button class="btn cart-btn" id="add_to_cart">ِAdd_To_Cart</button>
+          <button class="btn outline" id="quick_view">Quick_View</button>
+        </div> -->
+
+      </div>
+    </div>
+  </main>
+
+
+  <section class="modal" id="modal">
+    <span class="close-modal" id="close_modal">
+      <i class="fa-solid fa-circle-xmark"></i>
+    </span>
+    <div class="secondary-product" id="modal_product">
+      
+    </div>
+  </section>
+
+
+  <section class="cart-menu" id="cart_menu">
+    <span class="close-modal" id="close_cart">
+      <i class="fa-solid fa-circle-xmark"></i>
+    </span>
+    <h1>Cart</h1>
+    <h2>Cart Items</h2>
+    <div id="cart_products" class="cart-products">
+
+    </div>
+  </section>
+
+  <script src="fontawesome/fontawesome.min.js"></script>
+  <script src="fontawesome/solid.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
