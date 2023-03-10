@@ -1,5 +1,3 @@
-
-
 const products = [
   {
     product_id: 1,
@@ -56,7 +54,6 @@ const indicator = document.getElementById('indicator');
 let cartPros = [];
 
 
-
 if (!localStorage.getItem('small-task-items')) {
   localStorage.setItem('small-task-items', JSON.stringify(products));
   loadProducts();
@@ -106,10 +103,11 @@ document.getElementById('close_cart').addEventListener('click', () => {
 // Close modal
 document.getElementById('close_modal').addEventListener('click', () => {
   myModal.classList.remove('open');
-})
+});
 
 
-function viewAction() {
+// Quick view btn action - SHOW MODAL
+(function () {
 
   const viewBtns = Array.from(document.querySelectorAll('#quick_view'));
 
@@ -133,8 +131,9 @@ function viewAction() {
       theAdd(product_id - 1);
     })
   }
-}
+})();
 
+// Add to cart | remove from cart  -  INSIDE THE MODAL
 function theAdd(id) {
   const btn = document.getElementById('pro_modal');
   const addToCartBtns = Array.from(document.querySelectorAll('#add_to_cart'));
@@ -165,7 +164,8 @@ function theAdd(id) {
   })
 }
 
-function addAction() {
+// Add to cart | remove from cart  -  ACTIONS
+(function () {
 
   const addToCartBtns = Array.from(document.querySelectorAll('#add_to_cart'));
 
@@ -188,11 +188,10 @@ function addAction() {
       }
     })
   }
-}
+})();
 
-viewAction();
-addAction();
 
+// Function to display products into the CART
 function cartView(items) {
   document.getElementById('cart_products').innerHTML = items.map(item => {
     const { product_id, product_name, product_image, product_price } = item;
@@ -215,6 +214,7 @@ function cartView(items) {
 
 }
 
+// Remove from cart Btn - FROM THE CART MENU
 function removePros() {
   const removeBtns = Array.from(document.querySelectorAll('#remove_product'));
   const addToCartBtns = Array.from(document.querySelectorAll('#add_to_cart'));
