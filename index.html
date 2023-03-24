@@ -10,8 +10,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="fontawesome/solid.min.css">
-    <link rel="stylesheet" href="fontawesome/fontawesome.min.css">
+  <link rel="stylesheet" href="fontawesome/solid.min.css">
+  <link rel="stylesheet" href="fontawesome/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -31,6 +32,12 @@
     </div>
   </header>
 
+  <h1 class="ml9">
+    <span class="text-wrapper">
+      <span class="letters">Shopping Cart</span>
+    </span>
+  </h1>
+
   <main>
     <div class="container">
       <div id="productsss"></div>
@@ -46,7 +53,7 @@
       <i class="fa-solid fa-circle-xmark"></i>
     </span>
     <div class="secondary-product" id="modal_product">
-      
+
     </div>
   </section>
 
@@ -55,16 +62,19 @@
     <span class="close-modal" id="close_cart">
       <i class="fa-solid fa-circle-xmark"></i>
     </span>
-    <h1>Cart</h1>
-    <h2>Cart Items</h2>
+    <h1 class="animate__animated animate__backInRight" style="--animate-duration: 0.5s;">Cart</h1>
+    <h2 class="animate__animated animate__backInRight">Cart Items</h2>
     <div id="cart_products" class="cart-products">
 
     </div>
   </section>
 
+
+  <script src="js/anime.min.js"></script>
   <script src="fontawesome/fontawesome.min.js"></script>
   <script src="fontawesome/solid.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/app-animations.js"></script>
 
 </body>
 

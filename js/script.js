@@ -69,7 +69,7 @@ function loadProducts() {
   productsElement.innerHTML = appProducts.map(item => {
     const { product_id, product_name, product_image, product_price, added_to_cart } = item;
     return `
-    <div class="product" key=${product_id}>
+    <div class="product animate__animated animate__backInRight" key=${product_id}>
     <div class="img-container">
       <img src=${product_image} alt="watch img">
     </div>
